@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 256px; /* 16 * 16px, same as the number of columns * size of each item */
+    height: 256px; /* 16 * 16px, same as the number of rows * size of each item */
+    gap: 2px; /* Optional: adds space between grid items */
+}
+
+.grid-item {
+    flex: 0 0 15px;
+    width: 15px; /* Adjusted for the gap */
+    height: 15px; /* Adjusted for the gap */
+    background-color: #ffffff;
+    border: 1px solid #cccccc; /* Optional: adds a border to each cell */
+}
+#reset-button {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
